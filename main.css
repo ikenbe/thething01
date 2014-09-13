@@ -1,0 +1,17 @@
+*{
+	padding:0px;
+	margin:0px;
+};
+span.c1{
+	display: block;
+	height:100px;
+	width: 100px;
+	margin:10px;
+	border-radius: 20%;
+}
+.container{
+	display: block;
+};
+.row{
+	heith:100px;
+}

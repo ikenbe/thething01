@@ -2,12 +2,12 @@ var main = function(){
 	var $next = 0;
 	var $current = 0;
 //initial
-	$('span').each(function(){
+	$('span:not(.top)').each(function(){
 		$(this).html(Math.floor(Math.random()*Math.random()*4));
 	});
 	$('span:contains("0"):not(#next)').css({"background-color":"#d0d9ff","color":"#d0d9ff","box-shadow":"0px 0px 0px #000000"});
 	$('span:contains("1")').css({"background-color":"#5677fc","color":"white"});
-	$('span:contains("2")').css({"background-color":"#e91e63","color":"white"});
+	$('span:contains("2")').css({"background-color":"#f36c60","color":"white"});
 //Key Pressing Monitor
 	$(document).keydown(function(key){
 //Define the next number
@@ -44,7 +44,7 @@ var main = function(){
 		$('span').css({"color":"black","background-color":"white","box-shadow":"5px 5px 2px #738ffe"});
 		$('span:contains("0")').css({"color":"#d0d9ff","background-color":"#d0d9ff","box-shadow":"0px 0px 0px #738ffe"});
 		$('span:contains("1")').css({"background-color":"#5677fc","color":"white"});
-		$('span:contains("2")').css({"background-color":"#e91e63","color":"white"});
+		$('span:contains("2")').css({"background-color":"#f36c60","color":"white"});
 		$('span:contains("12"),span:contains("24"),span:contains("48"),span:contains("96"),span:contains("192")').css({"color":"black","background-color":"white"});
 //		$('#next').css({'background-color':'white','color':'#424242',"box-shadow":"5px 5px 2px #afbfff"});
 /*
