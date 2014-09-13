@@ -1,0 +1,32 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+p{
+	font-size:24px;
+	font-family:'noto sans',sans-serif;
+	text-align: center;
+}
+span{
+	display: inline-block;
+	height:100px;
+	width: 20%;
+	margin:10px;
+	padding:0px;
+	border-radius: 20px;
+	background-color: darkgray;
+	text-align: center;
+	line-height: 300%;
+	font-size:24px;
+	font-family:'noto sans',sans-serif;
+}
+
+.container{
+	display: block;
+	height:100%;
+	width:100%;
+};
+
+.row{
+	height:100px;
+}
