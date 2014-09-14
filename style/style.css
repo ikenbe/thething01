@@ -47,6 +47,9 @@ span:hover{
 	border-radius: 10px;
 	line-height:250%;
 }
+.top-left:hover{
+	cursor:pointer;
+}
 #top{
 	width:100%!important;
 	height:100px;

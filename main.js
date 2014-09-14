@@ -14,8 +14,10 @@ var main = function(){
 		$current = $next;
 		if($('.moved').size() > 0){
 			$next = Math.floor(Math.random()*3+1);
-			if( $('span:contains("1")').size() - $('span:contains("2")').size() >=4	){$next = 2}
-			else if( $('span:contains("1")').size() - $('span:contains("2")').size() <=-4 ){$next = 1}
+			var has1 = $('span:contains("1"):not(#next)').size();
+			var has2 = $('span:contains("2"):not(#next)').size();
+			if( has1 - has2 >=4	){$next = 2}
+			else if( has1 - has2 <=-4 ){$next = 1}
 			else if($next===3){for(var i=0;i<0.18;i=Math.random()){$next=$next*2}};
 			$('#next').text($next);
 //		$('#next').prepend('<p>'+$current+'</p>');
@@ -192,3 +194,8 @@ var main = function(){
 //-----------------------------------------------------------------------------
 };
 $(document).ready(main);
+$(document).ready(function(){
+		$('.top-left').click(function(){
+		location.reload();
+	})
+})
